@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Movie watchlist</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex">
+            <h1>Find Your Film</h1>
+            <a href="watchlist.html" class="my-watchlist">My Watchlist</a>
+        </header>
+        <main>
+            <form class="search-bar d-flex" id="search-bar-form">
+                <div class="take-input d-flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" 
+                    name="input-movie"
+                    id="input-movie"
+                    class="d-flex"
+                    placeholder="Search for a movie"
+                    required>
+                </div>
+                <button id="search-movie">Search</button>
+            </form>
+            
+            <div class="search-results" id="search-results">
+                <div class="no-data-initial">
+                    <img src="images/startExploring.png" alt="Start exploring icon">
+                    <p>Start exploring</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

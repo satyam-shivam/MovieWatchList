@@ -1,0 +1,297 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+
+h1{
+    margin: 0;
+    color: white;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #111827;
+}
+
+.container{
+    /* It should be 100vw */
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    margin: auto;
+    border-radius: 4px;
+    /* border: 3px solid black; */
+}
+
+.container > header{
+    /* increase height on larger screens */
+    height: 208px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)),
+                url("images/Cinema1.jpg");
+    background-size: 100% 100%;
+    padding: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+button,
+.my-watchlist, 
+.search-movies,
+.add-some-movies{
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:active,
+.my-watchlist:active,
+.search-movies:active,
+.add-some-movies:active{
+    transform: scale(0.97);
+}
+
+.my-watchlist,
+.search-movies,
+.add-some-movies{
+    text-decoration: none;
+}
+
+.my-watchlist,
+.search-movies{
+    color: whitesmoke;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 5px 10px;
+}
+
+.my-watchlist:hover,
+.my-watchlist:active,
+.search-movies:hover,
+.search-movies:active{
+    background-color: black;
+}
+
+.add-some-movies{
+    display: block;
+    text-align: center;
+}
+
+.add-some-movies> *{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px; 
+    color: #363636;
+}
+
+.search-bar{
+    height: 38px;
+    /* use clamp here */
+    width: clamp(420px,84%,650px);
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    margin: -18px auto 0 auto;
+    background-color: white;
+}
+
+.take-input{
+    width: 74%;
+    height: 100%;
+    padding: 9px 13px;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-family: inherit;
+}
+
+input{
+    border: none;
+}
+
+input:focus,
+input:active{
+    outline: none;
+}
+
+input,
+input::placeholder,
+#search-movie{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.fa-magnifying-glass{
+    height: 20px;
+    width: 20px;
+}
+
+#search-movie{
+    width: 26%;
+    height: 100%;
+    padding: 9px 11px 9px 17px;
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 0px 6px 6px 0px;
+    color: #374151;     
+}
+
+.no-data-initial{
+    margin: 100px auto auto auto;
+    color: #DFDDDD;
+}
+
+.no-data-initial>img{
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 62px;
+}
+
+.no-data-initial>p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* search results */
+
+.movie-not-found{
+    color: grey;
+    font-family: cursive;
+}
+
+.search-results,
+.movie-list{
+    margin: 44px auto;
+    /* use clamp here */
+    width: clamp(562px, 84%, 820px);
+}
+
+/* movie container */
+
+.movie{
+    width: 100%;
+    height: auto;
+    margin: 22px 0;
+    /* This gap can be increased as well */
+    gap: 21px;
+    align-items: center;
+    border-bottom: 1.5px solid #E5E7EB;
+    box-shadow: 0 0 8px 0.2px grey;
+    transition: all 0.5s ease-in;
+}
+
+.movie:hover{
+    transform: scale(1.02);
+}
+
+.movie-poster{
+    /* height: 148px; */
+    width: 21.6%;
+    height: 100%;
+    align-self: stretch;
+}
+
+
+.movie-info{
+    padding: 15px;
+    width: calc(100% - 120px);
+    flex-direction: column;
+}
+
+
+.movie-info > header{
+    gap: 8px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+ .fa-star{
+    height: 15px;
+    width: 15px;
+    color: #FEC654;
+}
+
+
+.highlights{
+    gap: 20px;
+}
+
+.highlights button{
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.fa-circle-plus{
+    height: 17px;
+    width: 17px;
+}
+
+.summary{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* media queries */
+
+@media screen and (min-width: 992px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    .container > header{
+        height: 252px;
+    }
+
+    .movie{
+        gap: 26px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1{
+        font-size: 3rem;
+    }
+    .container > header{
+        height: 300px;
+    }
+
+    .movie{
+        gap: 30px;
+    }
+}
+

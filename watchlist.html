@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Movie watchlist</title>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex">
+            <h1>My Watchlist</h1>
+            <a href="index.html" class="search-movies">Search for Movies</a>
+        </header>
+        <main>            
+            <div class="movie-list" id="movie-list">
+                <div class="no-data-initial">
+                    <p>Your watchlist is looking little empty...</p>
+                    <a href="index.html" class="add-some-movies">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Let's add some movies !</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="watchlist.js"></script>
+</body>
+</html>
