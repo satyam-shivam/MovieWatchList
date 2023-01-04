@@ -56,11 +56,12 @@ function removeFromWatchList(imdbId){
     const index = watchlistImdbArr.indexOf(imdbId);
     if (index > -1){
         watchlistImdbArr.splice(index, 1);
+        localStorage.setItem("watchlist", JSON.stringify(watchlistImdbArr));
         if (watchlistImdbArr.length === 0){
-            render();
+            renderInitialMessage();
+            return
         }
     }
-    localStorage.setItem("watchlist", JSON.stringify(watchlistImdbArr));
     movieList.querySelector(`#${imdbId}`).remove();
 }
 

@@ -37,8 +37,7 @@ function getMovieHtml(detailMovieData){
             <div class="movie d-flex" id = "${imdbID}">
                     <img src= ${ Poster == "N/A"?"images/posterNotFound.png":Poster}
                     class="movie-poster"
-                    alt="movie poster"
-                    class="movie-poster">
+                    alt="movie poster">
                 <div class="movie-info">
                     <header class="d-flex">
                         <h2 class="movie-name">${Title}</h2>
