@@ -10,14 +10,21 @@
 
 ## Project screenshots :<br><br>
 
-- Home Page : <br>
-![Initial State](images/initialState.PNG) <br><br>
-<hr/>
+1. Home Page : <br><br>
+<img src="images/initialState.PNG" alt="home-page" width=600>
+<br><br>
 
-![search movie](images/searchMovie.PNG)<br><br>
-<hr/>
+2. Search a movie : <br><br>
+<img src="images/searchMovie.PNG" alt="home-page" width=600>
+<br><br>
 
-![AddToWatchlist](images/addToWatchList.PNG)<br><br>
-<hr/>
+3. Add movie to watchlist : <br><br>
+<img src="images/addToWatchList.PNG" alt="home-page" width=600>
+<br><br>
 
-![mywatchlist](images/myWatchlist.PNG)
+4. My Watchlist Page : <br><br>
+<img src="images/myWatchlist.PNG" alt="home-page" width=600>
+<br><br>
+
+<h3>Project is delpoyed here - <a href="https://gleeful-dango-9e60f5.netlify.app/" target="_blank">MovieWatchlist</a>
+</h3>
